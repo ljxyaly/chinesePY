@@ -6805,7 +6805,7 @@ Pinyin.getWordsCode = function(str){
         str = str.replace(/([A-Z])[A-Z]*/g, "$1");
     var len = str.length;
     var c, result="", t;
-    for(i=0; i<len; i++){
+    for(var i=0; i<len; i++){
         c = str.substr(i,1);
         t = this._JMcode[c];
         if (""+t == "undefined") t = "";
